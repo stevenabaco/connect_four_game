@@ -8,7 +8,7 @@ class Token {
   }
 
   /**
-   * Draw new HTML token
+   * Draw a new HTML token
    */
   drawHTMLToken() {
     const token= document.createElement('div');

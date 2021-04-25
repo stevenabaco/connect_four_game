@@ -8,6 +8,6 @@ const game = new Game();
 
 startButton.addEventListener('click', () => {
 	game.startGame();
-	this.style.display = 'none';
+	startButton.style.display = 'none';
 	document.getElementById('play-area').style.opacity = '1';
 });
