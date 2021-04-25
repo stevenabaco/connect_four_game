@@ -7,9 +7,15 @@ class Token {
     this.dropped = false
   }
 
+  /**
+   * Draw new HTML token
+   */
   drawHTMLToken() {
-    let tokenHTML = `<div></div>`;
-    gameBoardUnderlay.appendChild(tokenHTML);
+    const token= document.createElement('div');
+    gameBoardUnderlay.appendChild(token);
+    token.setAttribute('id', this.id);
+    token.setAttribute('class', 'token');
+    token.style.backgroundColor = this.owner.color;
   }
 
   get 
