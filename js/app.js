@@ -11,3 +11,11 @@ startButton.addEventListener('click', () => {
 	startButton.style.display = 'none';
 	document.getElementById('play-area').style.opacity = '1';
 });
+
+/**
+ * Event listener for keyboard presses
+ */
+
+document.addEventListener('keydown', function(e) {
+  game.handleKeydown(e);
+})
