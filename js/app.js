@@ -6,9 +6,9 @@ const game = new Game();
  * Listens for click on `#begin-game` and calls startGame() on game object
  */
 
-startButton.addEventListener('click', () => {
+startButton.addEventListener('click', (e) => {
 	game.startGame();
-	startButton.style.display = 'none';
+	e.target.style.display = 'none';
 	document.getElementById('play-area').style.opacity = '1';
 });
 
@@ -16,6 +16,6 @@ startButton.addEventListener('click', () => {
  * Event listener for keyboard presses
  */
 
-document.addEventListener('keydown', function(e) {
+document.addEventListener('keydown', (e) => {
   game.handleKeydown(e);
 })
